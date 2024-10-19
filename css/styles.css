@@ -62,7 +62,7 @@ button {
     border: none;
     color: #fff;
     border-radius: 7px;
-    cursor: pointer;
+    cursor: pointer;    
     font-size: 16px;
     margin-bottom: 10px;
 }
@@ -168,19 +168,19 @@ button:hover {
 }
 
 .controls .resetBtn {
-    background-color: #eaeefa;
+    background-color: #9bb4fd;
 }
 
 .controls .resetBtn:hover {
-    background-color: #cdd4e7;
+    background-color: #88a4f1;
 }
 
 .controls .pauseBtn {
-    background-color: #f0e2e2;
+    background-color: #f8a08a;
 }
 
 .controls .pauseBtn:hover {
-    background-color: #ddc9c9;
+    background-color: #ffbf8b;
 }
 
 .controls .resumeBtn {
