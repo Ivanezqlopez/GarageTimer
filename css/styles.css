@@ -234,7 +234,7 @@ button:hover {
 @media (max-width: 600px) {
 
     .controls button {
-        width: 48%;
+        width: 80%;
         margin: auto;
     }
 
