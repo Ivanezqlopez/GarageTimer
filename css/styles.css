@@ -234,8 +234,14 @@ button:hover {
 @media (max-width: 600px) {
 
     .controls button {
-        width: 90%;
+        width: 95%;
         margin: auto;
+    }
+
+    .created-at {
+        font-size: 0.8em;
+       
+        
     }
 
 
