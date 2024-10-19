@@ -233,6 +233,11 @@ button:hover {
 
 @media (max-width: 600px) {
 
+    .controls button {
+        width: 48%;
+        margin: auto;
+    }
+
 
     .container {
         width: 90%; /* Ajusta el ancho del contenedor para pantallas pequeñas */
