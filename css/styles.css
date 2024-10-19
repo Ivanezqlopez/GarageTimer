@@ -1,0 +1,258 @@
+/* styles.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 92%; /* Aumentado para acomodar más temporizadores horizontalmente */
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-section {
+    margin: 0 auto 20px; /* Centra el bloque horizontalmente y mantiene el margen inferior */
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-transform: uppercase; /* Asegura que la entrada esté en mayúsculas */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    color: #fff;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#tipoVehiculoSelector {
+    margin-bottom: 20px;
+}
+
+#tipoVehiculoSelector p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+#tipoVehiculoSelector button {
+    width: 48%;
+    display: inline-block;
+}
+
+#autoBtn {
+    margin-right: 4%;
+}
+
+.vehicles-section {
+    margin-top: 20px;
+    display: flex;             /* Activa Flexbox */
+    flex-wrap: wrap;           /* Permite que los elementos se envuelvan a la siguiente línea */
+    gap: 18px;                 /* Espacio entre los elementos */
+    justify-content: center;   /* Centra los elementos horizontalmente */
+}
+
+.vehicle {
+    width: 23%;                /* Define el ancho para que dos elementos quepan en una fila */
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.vehicle-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.vehicle-header h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.deleteBtn {
+    background-color: #ee6c79;
+    width: 40%;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.deleteBtn:hover {
+    background-color: #dd4b5a;
+}
+
+.timer {
+    font-size: 3.0em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.controls button {
+    width: 48%;
+    padding: 8px;
+    background-color: #dcf5d7;
+    border: none;
+    color: #080808;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.controls button:hover {
+    background-color: #c5e0bf;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.controls .resetBtn {
+    background-color: #eaeefa;
+}
+
+.controls .resetBtn:hover {
+    background-color: #cdd4e7;
+}
+
+.controls .pauseBtn {
+    background-color: #f0e2e2;
+}
+
+.controls .pauseBtn:hover {
+    background-color: #ddc9c9;
+}
+
+.controls .resumeBtn {
+    background-color: #eee5d3;
+}
+
+.controls .resumeBtn:hover {
+    background-color: #ebe3d4;
+}
+
+/* Nuevo estilo para la hora de creación */
+.created-at {
+    font-size: 0.9em;
+    color: #777;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+.price{
+    font-weight: 600;
+    text-align: right;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    
+    
+}
+/* Media Queries para Responsividad */
+
+/* Para pantallas más pequeñas, muestra un solo temporizador por fila */
+
+@media (max-width: 960px) {
+    .container {
+        width: 90%; /* Ajusta el ancho del contenedor para pantallas pequeñas */
+    }
+
+    .vehicles-section {
+        justify-content: center; /* Centra los elementos en pantallas pequeñas */
+    }
+
+    .vehicle {
+        width: 40%;            /* Un solo elemento por fila */
+    }
+
+    #tipoVehiculoSelector button {
+        width: 100%;            /* Ajusta los botones para pantallas pequeñas */
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+
+
+    .container {
+        width: 90%; /* Ajusta el ancho del contenedor para pantallas pequeñas */
+    }
+
+    .input-section {
+        width: 80%;
+       
+    }
+
+    .vehicles-section {
+        justify-content: center; /* Centra los elementos en pantallas pequeñas */
+    }
+
+    .vehicle {
+        width: 100%;            /* Un solo elemento por fila */
+    }
+
+    #tipoVehiculoSelector button {
+        width: 100%;            /* Ajusta los botones para pantallas pequeñas */
+        margin-right: 0;
+    }
+}
