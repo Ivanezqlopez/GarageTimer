@@ -82,7 +82,7 @@ class VehicleTimer {
         this.controls.classList.add('controls');
 
         this.pauseBtn = document.createElement('button');
-        this.pauseBtn.textContent = 'Detener';
+        this.pauseBtn.textContent = 'Pausar';
         this.pauseBtn.classList.add('pauseBtn');
         this.pauseBtn.addEventListener('click', () => this.pauseTimer());
 
