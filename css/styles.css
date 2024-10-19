@@ -204,7 +204,7 @@ button:hover {
     font-weight: 600;
     text-align: right;
     font-size: 1.2em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.3em;
     
     
 }
@@ -234,7 +234,7 @@ button:hover {
 @media (max-width: 600px) {
 
     .controls button {
-        width: 80%;
+        width: 90%;
         margin: auto;
     }
 
