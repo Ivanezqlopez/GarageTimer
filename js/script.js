@@ -7,7 +7,7 @@ class VehicleTimer {
         this.isPaused = false;
         this.lastStart = null; // Timestamp cuando se inició o reanudó el temporizador
         this.createdAt = null; // Hora de creación
-        
+        this.note = savedData?.note || '';
         const [prefix, resto] = this.patente.split('-');
         this.prefijo = parseInt(prefix, 10);
         this.digits = resto.slice(0, 3);
@@ -64,6 +64,13 @@ class VehicleTimer {
         header.appendChild(title);
         header.appendChild(deleteBtn);
         this.vehicleElement.appendChild(header);
+
+        this.noteInput = document.createElement('textarea');
+        this.noteInput.placeholder = 'Añadir una nota...';
+        this.noteInput.value = this.note;
+        this.noteInput.addEventListener('input', () => this.saveToLocalStorage());
+
+        this.vehicleElement.appendChild(this.noteInput);
 
         this.timerDisplay = document.createElement('div');
         this.timerDisplay.classList.add('timer');
@@ -307,7 +314,8 @@ class VehicleTimer {
             totalSeconds: this.totalSeconds,
             isPaused: this.isPaused,
             lastStart: this.lastStart,
-            createdAt: this.createdAt
+            createdAt: this.createdAt,
+            note: this.noteInput.value // Guardar la nota
         };
 
         localStorage.setItem('vehicles', JSON.stringify(vehicles));
