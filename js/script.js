@@ -180,7 +180,7 @@ class VehicleTimer {
                 price = 5000;
             } else if (this.totalSeconds >= 4500) {
                 price = 4200;
-            } else if (this.totalSeconds >= 3600) {
+            } else if (this.totalSeconds >= 0) {
                 price = 3300;
             }
         } else if (this.letra === 'C') {
@@ -208,7 +208,7 @@ class VehicleTimer {
                 price = 7200;
             } else if (this.totalSeconds >= 4500) {
                 price = 6000;
-            } else if (this.totalSeconds >= 3600) {
+            } else if (this.totalSeconds >= 0) {
                 price = 4800;
             }
         }
