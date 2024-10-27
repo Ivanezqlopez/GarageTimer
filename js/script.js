@@ -272,7 +272,8 @@ class VehicleTimer {
         this.timerInterval = setInterval(() => {
             const now = Date.now();
             this.totalSeconds = Math.floor((now - this.lastStart) / 1000);
-            this.updateTimerDisplay();
+            console.log("Total Seconds: ", this.totalSeconds); // Log para verificar los segundos transcurridos
+            this.updateTimerDisplay(); // Asegúrate de que esto se llame aquí
             if (updateStorage) {
                 this.saveToLocalStorage();
             }
@@ -287,6 +288,7 @@ class VehicleTimer {
             this.saveToLocalStorage();
         }
     }
+    
     
     
     
