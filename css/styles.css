@@ -29,15 +29,17 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
     color: #333;
+    font-size: 2em;
 }
 
 .input-section {
     margin: 0 auto 20px; /* Centra el bloque horizontalmente y mantiene el margen inferior */
-    width: 25%;
+    width: 20%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    font-size: 1em;
 }
 
 label {
@@ -47,12 +49,13 @@ label {
 }
 
 input[type="text"] {
-    width: 100%;
+    width: 200px;
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
     text-transform: uppercase; /* Asegura que la entrada esté en mayúsculas */
+    
 }
 
 button {
@@ -132,6 +135,17 @@ button:hover {
 .deleteBtn:hover {
     background-color: #dd4b5a;
 }
+
+.search-input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    
+}
+
 
 .timer {
     font-size: 3.0em;
@@ -244,14 +258,33 @@ button:hover {
         
     }
 
+    h1 {
 
-    .container {
-        width: 90%; /* Ajusta el ancho del contenedor para pantallas pequeñas */
+        font-size: 1.5em;
     }
 
     .input-section {
-        width: 80%;
-       
+        margin: 0 auto 20px; /* Centra el bloque horizontalmente y mantiene el margen inferior */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1em;
+    }
+
+
+    .container {
+        width: 100%; /* Ajusta el ancho del contenedor para pantallas pequeñas */
+    }
+
+    .container {
+        width: 100%; /* Ajusta el ancho del contenedor para pantallas pequeñas */
+    }
+
+    .input-section {
+        
+       font-size: 1.1rem;
     }
 
     .vehicles-section {
@@ -267,3 +300,14 @@ button:hover {
         margin-right: 0;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
