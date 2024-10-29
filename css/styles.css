@@ -274,12 +274,10 @@ button:hover {
     }
 
 
-    .container {
-        width: 100%; /* Ajusta el ancho del contenedor para pantallas pequeñas */
-    }
 
     .container {
         width: 100%; /* Ajusta el ancho del contenedor para pantallas pequeñas */
+        max-height: 100vh;
     }
 
     .input-section {
