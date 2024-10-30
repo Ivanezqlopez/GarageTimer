@@ -156,8 +156,10 @@ class VehicleTimer {
     updatePriceDisplay() {
         let price = 0;
         if (this.letra === 'A') {
-            if (this.totalSeconds >= 14400) {/*04:00:00*/
-                price = 13000;
+            if (this.totalSeconds >= 43200) {/*12:00:00*/
+                price = 21000;
+            } else if (this.totalSeconds >= 14400) {/*04:00:00*/
+                price = 13000;    
             } else if (this.totalSeconds >= 14100) {/*03:55:00*/
                 price = 13000;
             } else if (this.totalSeconds >= 13800) {/*03:50:00*/
@@ -232,8 +234,10 @@ class VehicleTimer {
                 price = 3300;
             }
         } else if (this.letra === 'C') {
-            if (this.totalSeconds >= 14400) {
-                price = 19000;
+            if (this.totalSeconds >= 43200) {/*12:00:00*/
+                price = 28000;
+            } else if (this.totalSeconds >= 14400) {/*04:00:00*/
+                price = 13000;
             } else if (this.totalSeconds >= 14100) {/*03:55:00*/
                 price = 18800;
             } else if (this.totalSeconds >= 13800) {/*03:50:00*/
