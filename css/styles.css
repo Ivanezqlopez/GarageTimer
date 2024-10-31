@@ -244,7 +244,7 @@ button:focus:not(:focus-visible) {
 
 /* Cuando se expanda el campo de búsqueda */
 .search-container.active {
-    width: 300px;
+    width: 200px;
 }
 
 .search-container.active #searchInput {
