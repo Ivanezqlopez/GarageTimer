@@ -510,12 +510,14 @@ document.getElementById('agregarVehiculo').addEventListener('click', () => {
     patenteInput.value = "";
 });
 
-// Crear el input de búsqueda debajo del botón "Agregar Vehículo"
-const searchInput = document.createElement('input');
-searchInput.type = 'text';
-searchInput.placeholder = 'Buscar';
-searchInput.classList.add('search-input');
-document.getElementById('vehiclesSection').before(searchInput);
+document.getElementById('searchButton').addEventListener('click', () => {
+    const searchContainer = document.querySelector('.search-container');
+    searchContainer.classList.toggle('active');
+    if (searchContainer.classList.contains('active')) {
+        document.getElementById('searchInput').focus();
+    }
+});
+
 
 
 // Evento para buscar y filtrar vehículos por patente

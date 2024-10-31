@@ -212,15 +212,45 @@ button:focus:not(:focus-visible) {
     background-color: #dd4b5a;
 }
 
-.search-input {
-    width: 80%;
+/* Estilo para el contenedor del buscador */
+.search-container {
+    position: relative;
+    width: 40px;
+    transition: width 0.4s ease;
+    overflow: hidden;
+}
+
+#searchButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+#searchInput {
+    width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    padding-left: 40px; /* Espacio para el ícono */
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 16px;
-    
+    opacity: 0;
+    transition: opacity 0.4s ease, width 0.4s ease;
 }
+
+/* Cuando se expanda el campo de búsqueda */
+.search-container.active {
+    width: 300px;
+}
+
+.search-container.active #searchInput {
+    opacity: 1;
+}
+
 
 
 .timer {
